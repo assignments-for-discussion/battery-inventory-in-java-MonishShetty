@@ -13,7 +13,6 @@ public class Main {
   }
 
   static void testBucketingByHealth() {
-    int h=0,e=0,f=0;
     System.out.println("Counting batteries by SoH...\n");
     int[] presentCapacities = {113, 116, 80, 95, 92, 70};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
