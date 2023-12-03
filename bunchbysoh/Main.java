@@ -19,7 +19,7 @@ public class Main {
     int[] presentCapacities = {113, 116, 80, 95, 92, 70};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
     ArrayList<Integer> soh=new ArrayList<Integer>();
-    ArrayList<Integer> healthylist=new ArrayList<Integer>();
+    ArrayList<Integer> healthylist=new ArrayList<Integer>();//List to store 
     ArrayList<Integer> exchangelist=new ArrayList<Integer>();
     ArrayList<Integer> failedlist=new ArrayList<Integer>();
     for(int i:presentCapacities){
