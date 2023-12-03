@@ -13,9 +13,29 @@ public class Main {
   }
 
   static void testBucketingByHealth() {
+    int h=0,c=0,f=0;
     System.out.println("Counting batteries by SoH...\n");
     int[] presentCapacities = {113, 116, 80, 95, 92, 70};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
+    ArrayList<Integer> soh=new ArrayList<Integer>();
+    for(int i:presentCapacities){
+      int x=(100*i)/120;
+      soh.add(x);
+    }
+    for(int i=0;i<soh.size();i++){
+      if(soh.get(i)>80){
+        h++;
+        assert(counts.healthy==h)
+          }
+      else if(soh.get(i)>80){
+        h++;
+        assert(counts.healthy==h)
+          }
+      else if(soh.get(i)>80){
+        h++;
+        assert(counts.healthy==h)
+          }
+        
     assert(counts.healthy == 2);
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
