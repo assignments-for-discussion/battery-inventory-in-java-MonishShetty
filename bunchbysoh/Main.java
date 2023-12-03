@@ -18,6 +18,7 @@ public class Main {
     int[] presentCapacities = {113, 116, 80, 95, 92, 70};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
     ArrayList<Integer> soh=new ArrayList<Integer>();    //List to store converted SoH values of batteries
+    //Store the classified results in 3 different lists
     ArrayList<Integer> healthylist=new ArrayList<Integer>();  //List to store batteries falling under healthy condition
     ArrayList<Integer> exchangelist=new ArrayList<Integer>(); //List to store batteries falling under exchange condition
     ArrayList<Integer> failedlist=new ArrayList<Integer>();   //List to store batteries falling under failed condition
